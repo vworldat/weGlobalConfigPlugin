@@ -29,8 +29,8 @@ class ProjectConfiguration extends sfProjectConfiguration
 Usage
 -----
 
-* Add a file called global.yml to any config folder of your project (globally, in plugins, in apps)
-* global.yml is environment aware, so you can use something like this:
+ * Add a file called global.yml to any config folder of your project (globally, in plugins, in apps)
+ * global.yml is environment aware, so you can use something like this:
 
 ``` yml
 dev:
@@ -48,9 +48,10 @@ So what's the benefit to app.yml etc.?
 --------------------------------------
 
 The benefit and motivation for my own config handler comes from 2 facts:
-* It's independent from all the default config in symfony (the app config in app.yml is crowded with existing settings)
-* It fires an event as soon as the config has been loaded. I don't know why the symfony config handlers forgot about that.
-  Using this event you can listen to the loading of custom configuration in your various plugin configurations and do awesome stuff.
+
+ * It's independent from all the default config in symfony (the app config in app.yml is crowded with existing settings)
+ * It fires an event as soon as the config has been loaded. I don't know why the symfony config handlers forgot about that.
+   Using this event you can listen to the loading of custom configuration in your various plugin configurations and do awesome stuff.
 
 ``` php
 <?php
