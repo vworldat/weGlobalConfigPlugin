@@ -1,0 +1,5 @@
+config/global.yml:
+  class:        weGlobalConfigHandler
+  file:         %sf_root_dir%/plugins/weGlobalConfigPlugin/lib/config/weGlobalConfigHandler.php
+  param:
+    prefix:     global_
